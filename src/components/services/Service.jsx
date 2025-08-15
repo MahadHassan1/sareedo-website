@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import '../services/Service.css';
-import Transport from '../transportation/Transport';
-import Warehousing from '../warehousing/Warehousing';
-import Cars from '../cars/Cars';
+import Education from '../education/Education';
+import Livelihood from '../livelihood/Livelihood';
+import Health from '../health/Health';
 
 const Service = () => {
-  // Set "Transportation" as the default active category
-  const [activeCategory, setActiveCategory] = useState("Transportation");
+  const [activeCategory, setActiveCategory] = useState("Education");
 
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
@@ -19,7 +18,7 @@ const Service = () => {
         <div className="line"></div>
       </div> 
       <div className="category-link">
-        {["Education", "Livelihood Support", "Humanitarian Aid", "Health Services"].map((category) => (
+        {["Education", "Livelihood Support", "Health Services"].map((category) => (
           <h3
             key={category}
             onClick={() => handleCategoryClick(category)}

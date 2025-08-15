@@ -47,6 +47,9 @@ const Navbar = () => {
         <li className="items">
           <a href="#" onClick={(e) => scrollToSection('services', e)}>services</a>
         </li>
+        <li className="items">
+          <a href="#" onClick={(e) => scrollToSection('offices', e)}>offices</a>
+        </li>
         <li className="items nav-btn">
           <button onClick={(e) => scrollToSection('contact', e)}>
             Contact Us
@@ -74,6 +77,9 @@ const Navbar = () => {
             </li>
             <li className="items">
               <a href="#" onClick={(e) => scrollToSection('services', e)}>services</a>
+            </li>
+            <li className="items">
+              <a href="#" onClick={(e) => scrollToSection('offices', e)}>offices</a>
             </li>
             <li className="items nav-btn">
               <a href="#" onClick={(e) => scrollToSection('contact', e)}>Book Us</a>
