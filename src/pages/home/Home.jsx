@@ -8,6 +8,7 @@ import Testimonial from '../../components/testimonials/Testimonial';
 import Contact from '../../components/contact/Contact';
 import Social from '../../components/socialIcons/Socials';
 import Footer from '../../components/footer/Footer';
+import Offices from '../../components/offices/Offices';
 
 const Home = () => {
   return (
@@ -19,6 +20,9 @@ const Home = () => {
         </div>
        <div id="services">
           <Service />
+        </div>
+        <div id="offices">
+          <Offices />
         </div>
          <Testimonial />
         <div id="contact">
